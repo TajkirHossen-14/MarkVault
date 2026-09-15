@@ -2,6 +2,6 @@
 
 # MarkVault
 
-**A better home for your links**
+### A better home for your links**
 
 </div>
