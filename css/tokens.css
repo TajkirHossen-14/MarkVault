@@ -1,0 +1,24 @@
+@layer reset, tokens, base, layout, components, utilities, overrides;
+@layer tokens {
+:root {
+  color-scheme: dark;
+  --brand-accent: 252.15 68.2% 53.14%; /* #5736d9: user's brand violet */
+  --background: 233 24% 10%; --surface: 234 23% 13%; --surface-2: 233 21% 17%; --surface-hover: 225 18% 21%;
+  --border: 224 19% 23%; --border-strong: 224 17% 34%; --foreground: 220 28% 97%; --muted-foreground: 220 17% 72%; --subtle-foreground: 220 13% 62%;
+  --primary: 252 88% 74%; --primary-hover: 252 88% 79%; --primary-foreground: 0 0% 100%; --button-primary: var(--brand-accent); --button-primary-hover: 252 68% 58%; --secondary-accent: 196 82% 60%;
+  --success: 152 60% 58%; --warning: 38 92% 60%; --danger: 0 72% 65%; --ring: 252 88% 70%; --overlay: 224 30% 3% / .76;
+  --rose: 350 80% 70%; --amber: 38 92% 65%; --emerald: 152 60% 60%; --cyan: 190 75% 66%; --blue: 215 90% 72%; --violet: 252 88% 75%; --fuchsia: 300 65% 75%; --slate: 215 20% 70%;
+  --font-ui: 'Geist', Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
+  --font-mono: 'JetBrains Mono', ui-monospace, monospace;
+  --fs-xs: 12px; --fs-sm: 13px; --fs-base: 14px; --fs-md: clamp(15px, .9vw + 13px, 16px); --fs-lg: clamp(18px, 1vw + 15px, 20px); --fs-xl: clamp(22px, 1.4vw + 17px, 26px); --fs-2xl: clamp(28px, 2.2vw + 20px, 36px); --fs-3xl: clamp(34px, 3.4vw + 22px, 52px); --fs-hero: clamp(40px, 5.2vw + 16px, 76px);
+  --radius-control: 8px; --radius-card: 12px; --radius-modal: 16px; --radius-marketing: 20px;
+  --shadow-sm: 0 4px 16px hsl(224 30% 3% / .1); --shadow-soft-lg: 0 24px 80px hsl(224 30% 3% / .35);
+  --ease: cubic-bezier(.2,0,0,1); --duration: 180ms; --sidebar-width: 248px;
+}
+[data-theme="light"] {
+  color-scheme: light; --background: 240 35% 97%; --surface: 240 35% 99%; --surface-2: 238 30% 94%; --surface-hover: 225 24% 90%;
+  --border: 224 21% 86%; --border-strong: 224 18% 73%; --foreground: 225 28% 17%; --muted-foreground: 222 17% 38%; --subtle-foreground: 222 13% 44%;
+  --primary: var(--brand-accent); --primary-hover: 252 68% 47%; --button-primary: var(--brand-accent); --button-primary-hover: 252 68% 47%; --success: 152 65% 30%; --warning: 35 92% 32%; --danger: 0 72% 45%;
+  --rose: 350 65% 40%; --amber: 35 80% 34%; --emerald: 152 65% 30%; --cyan: 190 80% 30%; --blue: 215 75% 40%; --violet: 252 70% 50%; --fuchsia: 300 60% 38%; --slate: 215 20% 40%;
+}
+}
