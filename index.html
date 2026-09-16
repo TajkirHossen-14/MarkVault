@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#141722">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; font-src 'self'; img-src 'self' https://www.google.com https://*.microlink.io; connect-src 'self' https: http:; worker-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self'">
+  <title>MarkVault — Your links, finally organized.</title>
+  <meta name="description" content="A quiet home for everything worth keeping. Organize bookmarks with folders, tags and instant search. Local-first, no account, no tracking.">
+  <meta property="og:title" content="MarkVault — Your links, finally organized.">
+  <meta property="og:description" content="Your personal corner of the internet. A private, local-first bookmark manager that runs entirely in your browser.">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary">
+  <link rel="icon" href="assets/icons/logo.svg" type="image/svg+xml">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="preload" href="assets/fonts/geist-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/jetbrains-mono-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <script src="js/theme.js"></script>
+  <link rel="stylesheet" href="css/tokens.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/marketing.css">
+  <link rel="stylesheet" href="css/app.css">
+  <link rel="stylesheet" href="css/refinements.css">
+  <script type="module" src="js/main.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to content</a>
+  <div id="root"></div>
+  <div id="overlay-root"></div>
+  <mv-toaster id="toaster" role="status" aria-live="polite"></mv-toaster>
+  <div id="announcer" class="sr-only" aria-live="polite"></div>
+  <noscript><main class="fallback"><h1>Your links, finally organized.</h1><p>MarkVault needs JavaScript to securely store your bookmarks in this browser. Please enable it to open your vault.</p></main></noscript>
+</body>
+</html>
