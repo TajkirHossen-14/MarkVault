@@ -1,0 +1,15 @@
+{
+  "id": "./",
+  "name": "MarkVault — Your links, finally organized.",
+  "short_name": "MarkVault",
+  "description": "Your personal, private, local-first bookmark manager.",
+  "start_url": "./index.html#/app",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#141722",
+  "theme_color": "#141722",
+  "icons": [
+    { "src": "assets/icons/logo.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any" },
+    { "src": "assets/icons/maskable.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "maskable" }
+  ]
+}
