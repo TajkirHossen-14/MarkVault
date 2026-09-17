@@ -1,0 +1,18 @@
+{
+  "name": "MarkVault",
+  "version": "1.2.0",
+  "files": [
+    "index.html", "manifest.webmanifest", "sw.js", "source-manifest.json",
+    "README.md", "USER-GUIDE-BN.md", "IDE-AI-HANDOFF.md", "LICENSE", "brief.txt", "package.json", "jsconfig.json", "scripts/build.mjs",
+    "assets/fonts/Geist-OFL.txt", "assets/fonts/JetBrainsMono-OFL.txt", "assets/fonts/geist-latin.woff2", "assets/fonts/geist-latin-ext.woff2", "assets/fonts/jetbrains-mono-latin.woff2", "assets/fonts/jetbrains-mono-latin-ext.woff2", "assets/icons/logo.svg", "assets/icons/maskable.svg", "assets/readme/banner.svg",
+    "css/tokens.css", "css/base.css", "css/components.css", "css/marketing.css", "css/app.css", "css/refinements.css",
+    "js/theme.js", "js/main.js", "js/lib/constants.js",
+    "js/core/component.js", "js/core/dom.js", "js/core/events.js", "js/core/focus.js", "js/core/format.js", "js/core/fuzzy.js", "js/core/hash.js", "js/core/idb.js", "js/core/lzw.js", "js/core/router.js", "js/core/scheduler.js", "js/core/signal.js", "js/core/store.js", "js/core/url.js", "js/core/virtual-list.js",
+    "js/data/bookmark-repo.js", "js/data/folder-repo.js", "js/data/tag-repo.js", "js/data/meta-repo.js", "js/data/migrations.js", "js/data/repository.js", "js/data/schema.js", "js/data/sync-tabs.js",
+    "js/services/vault.js", "js/services/export.js", "js/services/import.js", "js/services/linkcheck.js", "js/services/markdown.js", "js/services/metadata.js", "js/services/share.js", "js/services/stats.js",
+    "js/components/dialogs.js", "js/components/icon.js", "js/components/marketing-menu.js", "js/components/primitives.js",
+    "js/pages/app.js", "js/pages/marketing.js", "js/pages/settings.js", "js/pages/stats.js", "js/pages/shared.js", "js/pages/docs.js", "js/pages/kitchen-sink.js",
+    "js/workers/import-parser.worker.js", "js/workers/stats.worker.js",
+    "dev/harness.html", "dev/tests.js", "dev/release-tests.js", "dev/test.css", "dev/download.html", "dev/download.js", "dev/zip.js"
+  ]
+}
