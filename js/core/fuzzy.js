@@ -1,0 +1,5 @@
+// @ts-check
+/** Subsequence score with contiguous, boundary and gap bonuses. @param {string} query @param {string} text */
+export function fuzzy(query, text) { const needle = query.toLowerCase(), source = text.toLowerCase(); let pos = -1, score = 0; const indices = []; for (const char of needle) { const next = source.indexOf(char, pos + 1); if (next < 0) return null; score += 10 + (next === pos + 1 ? 8 : 0) + (next === 0 || /[\s/_\-.]/.test(source[next - 1]) ? 12 : 0) - Math.min(10, next - pos - 1); indices.push(next); pos = next; } return { score, indices }; }
+/** @param {object} bookmark @param {string} query @param {Array} tags */
+export function searchScore(bookmark, query, tags = []) { if (!query) return 1; const fields = [[bookmark.title, 1], [tags.filter(t => bookmark.tagIds.includes(t.id)).map(t => t.name).join(' '), .8], [bookmark.domain, .6], [bookmark.url, .4], [bookmark.note, .3]]; return Math.max(0, ...fields.map(([text, weight]) => (fuzzy(query, text || '')?.score ?? 0) * weight)); }
