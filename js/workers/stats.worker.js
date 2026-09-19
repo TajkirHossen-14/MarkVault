@@ -1,0 +1,4 @@
+// @ts-check
+/** Pure aggregation shared by the worker and feature-detected fallback. @param {Array} records */
+export function aggregate(records) { const bookmarks = records.filter(b => !b.deletedAt), domains = {}, days = {}, tags = {}; for (const b of bookmarks) { domains[b.domain] = (domains[b.domain] || 0) + 1; const day = new Date(b.createdAt).toISOString().slice(0,10); days[day] = (days[day] || 0) + 1; b.tagIds.forEach(id => tags[id] = (tags[id] || 0) + 1); } return { total: bookmarks.length, favorites: bookmarks.filter(b => b.isFavorite).length, unread: bookmarks.filter(b => !b.isRead).length, visits: bookmarks.reduce((n,b) => n + b.visitCount, 0), domains: Object.entries(domains).sort((a,b) => b[1]-a[1]).slice(0,8), days, tags }; }
+if (typeof document === 'undefined') self.addEventListener('message', event => self.postMessage({ id: event.data.id, result: aggregate(event.data.records) }));
