@@ -1,0 +1,6 @@
+// @ts-check
+import { prefs } from '../core/store.js';
+import { metaRepo } from '../data/meta-repo.js';
+import { normalizeUrl, isValidUrl } from '../core/url.js';
+/** Opt-in third-party preview fetch. Local title creation never depends on this. @param {string} url @param {AbortSignal} signal */
+export async function metadata(url, signal) { if (!prefs.state.previews) return null; const key = `preview:${normalizeUrl(url)}`; const cached = await metaRepo.get(key); if (cached) return cached.value; const endpoint = prefs.state.previewEndpoint; if (!isValidUrl(endpoint)) return null; const controller = new AbortController(); const abort = () => controller.abort(); signal?.addEventListener('abort', abort, { once:true }); const timeout = setTimeout(abort, 6000); try { const response = await fetch(endpoint + encodeURIComponent(url), { signal: controller.signal, referrerPolicy: 'no-referrer', credentials: 'omit' }); if (!response.ok) return null; const json = await response.json(); const data = json.data || json; const value = { title: typeof data.title === 'string' ? data.title.slice(0,500) : '', description: typeof data.description === 'string' ? data.description.slice(0,2000) : '' }; await metaRepo.put({ key, value }); return value; } catch { return null; } finally { clearTimeout(timeout); signal?.removeEventListener('abort', abort); } }
