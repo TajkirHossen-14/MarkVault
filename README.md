@@ -21,9 +21,9 @@
 
 </div>
 
----
+<img width="100%" src="https://capsule-render.vercel.app/api?type=rect&color=835bf6&height=2&section=header"/>
 
-MarkVault is a browser-based bookmark manager for the article you want to read later, the tool you will need again, and the idea you do not want to lose. Save links, organize them with folders and tags, and rediscover them through fast search and keyboard shortcuts. Your collection stays in your browser – not in an account on someone else’s server.
+**MarkVault** is a browser-based bookmark manager for the article you want to read later, the tool you will need again, and the idea you do not want to lose. Save links, organize them with folders and tags, and rediscover them through fast search and keyboard shortcuts. Your collection stays in your browser – not in an account on someone else’s server.
 
 Built with **HTML, modern CSS, native JavaScript modules, Web Components and IndexedDB**. No runtime framework or external JavaScript library. A new vault is genuinely empty: no demo bookmarks, fake activity, or sign-up flow.
 
@@ -46,7 +46,7 @@ Built with **HTML, modern CSS, native JavaScript modules, Web Components and Ind
 - [🤝🏼 Contributing](#contributing)
 - [📜 License](#license)
 
----
+<img width="100%" src="https://capsule-render.vercel.app/api?type=rect&color=835bf6&height=2&section=header"/>
 
 ## 💡 Why MarkVault
 
@@ -59,7 +59,7 @@ Bookmarks should be easier to find than the tabs they replaced. MarkVault combin
 
 > Local-first also means **back up your data**. Clearing site data or deleting your browser profile can remove your vault. Keep regular JSON exports somewhere safe.
 
----
+<img width="100%" src="https://capsule-render.vercel.app/api?type=rect&color=835bf6&height=2&section=header"/>
 
 ## ✨ Features
 
@@ -99,7 +99,7 @@ Bookmarks should be easier to find than the tabs they replaced. MarkVault combin
 - Versioned offline shell caching and a service-worker update prompt.
 - Native modal focus trapping, Escape/close behavior, inert backgrounds and reduced-motion support.
 
----
+<img width="100%" src="https://capsule-render.vercel.app/api?type=rect&color=835bf6&height=2&section=header"/>
 
 ## 🎨 Design and Responsive Experience
 
@@ -117,7 +117,7 @@ Theme icons represent the **current** appearance: moon for dark, sun for light. 
 
 The onboarding illustration reserves its full height, so it cannot collapse into the welcome heading. Hamburger section navigation runs after the sheet closes, and focus restoration does not scroll the page back.
 
----
+<img width="100%" src="https://capsule-render.vercel.app/api?type=rect&color=835bf6&height=2&section=header"/>
 
 ## 🛠️ Tech Stack
 
@@ -135,7 +135,7 @@ The onboarding illustration reserves its full height, so it cannot collapse into
 
 **No runtime dependencies.** esbuild is a development dependency, not a library loaded by the website. The badges above are GitHub README assets, not application requests.
 
----
+<img width="100%" src="https://capsule-render.vercel.app/api?type=rect&color=835bf6&height=2&section=header"/>
 
 ## 📁 Project Structure
 
@@ -184,7 +184,7 @@ MarkVault/
 
 **One production HTML entry: `index.html`.** Landing, library, settings, shared links and documentation use hash routes. Themes and optional menu/rail states use query parameters. Only browser tests and source-download utilities retain separate HTML files in `dev/`.
 
----
+<img width="100%" src="https://capsule-render.vercel.app/api?type=rect&color=835bf6&height=2&section=header"/>
 
 ## 🚀 Getting Started
 
@@ -222,7 +222,7 @@ npm run build
 
 Output goes to `dist/`, retaining native import and worker paths. This command does not typecheck the app. Local npm/build execution must still be verified in your IDE.
 
----
+<img width="100%" src="https://capsule-render.vercel.app/api?type=rect&color=835bf6&height=2&section=header"/>
 
 ## 💾 Download and Back Up
 
@@ -239,7 +239,7 @@ Open **`dev/download.html`** or Documentation → **Download source** to create 
 
 ⚠️ **Code ZIPs contain no personal bookmarks.** JSON import merges rather than overwriting existing duplicate URLs. To recover all exported bookmark data unchanged, import into an empty vault. Record IDs are remapped; preferences and cached metadata are not restored automatically.
 
----
+<img width="100%" src="https://capsule-render.vercel.app/api?type=rect&color=835bf6&height=2&section=header"/>
 
 ## ⌨️ Keyboard Shortcuts
 
@@ -259,7 +259,7 @@ Open **`dev/download.html`** or Documentation → **Download source** to create 
 
 App shortcuts pause while typing into a field. The application and marketing reference share `js/lib/constants.js`.
 
----
+<img width="100%" src="https://capsule-render.vercel.app/api?type=rect&color=835bf6&height=2&section=header"/>
 
 ## 🗺️ Pages and Routes
 
@@ -285,7 +285,7 @@ App shortcuts pause while typing into a field. The application and marketing ref
 
 Query parameters before the hash: `?theme=light|dark` overrides initial appearance; `?sidebar=collapsed` opens the icon rail; `?menu=open` opens landing navigation; `?section=footer` requests footer scrolling. The `mvtest-*` database override is for explicit test URLs only.
 
----
+<img width="100%" src="https://capsule-render.vercel.app/api?type=rect&color=835bf6&height=2&section=header"/>
 
 ## 🔒 Privacy and Data Storage
 
@@ -311,7 +311,7 @@ The IndexedDB database is named **`markvault`**. No server database or project T
 
 The CSP blocks external scripts. Some editor hosting injects a Cloudflare analytics beacon; it remains blocked rather than whitelisted, and the source ZIP strips that known injected beacon from HTML. Disable host analytics for your own privacy-first deployment.
 
----
+<img width="100%" src="https://capsule-render.vercel.app/api?type=rect&color=835bf6&height=2&section=header"/>
 
 ## 🏗️ Architecture
 
@@ -336,7 +336,7 @@ IndexedDB — browser-local stores
 
 Detailed maintenance guidance is consolidated in [IDE-AI-HANDOFF.md](IDE-AI-HANDOFF.md); separate architecture and test-report Markdown files are intentionally omitted.
 
----
+<img width="100%" src="https://capsule-render.vercel.app/api?type=rect&color=835bf6&height=2&section=header"/>
 
 ## ✅ Testing and Verification
 
@@ -362,7 +362,7 @@ Local npm/build execution; clean checkJs/typecheck; Lighthouse score; complete c
 
 The earlier console run after the router fix had no app page errors; the final 58-test run was verified through its rendered results when repeated console captures became unavailable. Hosting-injected CSP warnings remain expected. No production deployment or external repository push is claimed.
 
----
+<img width="100%" src="https://capsule-render.vercel.app/api?type=rect&color=835bf6&height=2&section=header"/>
 
 ## 🚀 Deploying
 
@@ -379,7 +379,7 @@ MarkVault is static and uses relative asset paths and hash routing.
 
 ⚠️ Do not deploy `node_modules`. Update the service-worker version/inventory for releases. Test module MIME types, subdirectory paths and offline activation on your actual host. SVG-only PWA icons are not universally install-compatible. Editing source does not update a live deployment until publishing.
 
----
+<img width="100%" src="https://capsule-render.vercel.app/api?type=rect&color=835bf6&height=2&section=header"/>
 
 ## 📋 Roadmap and Known Limitations
 
@@ -394,7 +394,7 @@ The core local-first application is implemented. The original aspirational brief
 
 ⚠️ **Recommended order:** run local build and tests → verify real browsers/mobile → audit accessibility/types → profile large vaults → extend features. Cloud sync/accounts are intentionally absent; adding them would require an explicit new architecture/privacy decision.
 
----
+<img width="100%" src="https://capsule-render.vercel.app/api?type=rect&color=835bf6&height=2&section=header"/>
 
 ## 🤝🏼 Contributing
 
@@ -415,7 +415,7 @@ git commit -m "Fix focused issue with regression coverage"
 git push -u origin fix/focused-improvement
 ```
 
----
+<img width="100%" src="https://capsule-render.vercel.app/api?type=rect&color=835bf6&height=2&section=header"/>
 
 ## 📜 License
 
