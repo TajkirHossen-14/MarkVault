@@ -168,6 +168,8 @@ MarkVault/
 │   ├── theme.js
 │   └── main.js
 │
+├── dev/                       # Browser tests and source ZIP exporter
+│
 ├── scripts/build.mjs          # Optional esbuild output to dist/
 ├── sw.js
 ├── manifest.webmanifest
