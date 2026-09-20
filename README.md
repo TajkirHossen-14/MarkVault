@@ -23,7 +23,7 @@
 
 ---
 
-MarkVault is a browser-based bookmark manager for the article you want to read later, the tool you will need again, and the idea you do not want to lose. Save links, organize them with folders and tags, and rediscover them through fast search and keyboard shortcuts. Your collection stays in your browser—not in an account on someone else’s server.
+MarkVault is a browser-based bookmark manager for the article you want to read later, the tool you will need again, and the idea you do not want to lose. Save links, organize them with folders and tags, and rediscover them through fast search and keyboard shortcuts. Your collection stays in your browser – not in an account on someone else’s server.
 
 Built with **HTML, modern CSS, native JavaScript modules, Web Components and IndexedDB**. No runtime framework or external JavaScript library. A new vault is genuinely empty: no demo bookmarks, fake activity, or sign-up flow.
 
@@ -87,7 +87,7 @@ Bookmarks should be easier to find than the tabs they replaced. MarkVault combin
 - Review a preview before explicitly confirming the import.
 - Skip invalid/duplicate URLs and commit large imports in chunks of 500.
 - Export **JSON** for full bookmark data, **HTML** for browsers, or **CSV** for spreadsheets.
-- Share selected URLs, titles and descriptions inside a compressed read-only link—no upload.
+- Share selected URLs, titles and descriptions inside a compressed read-only link – no upload.
 - Notes and visit history are not included in shared links. Share links are not encrypted.
 
 ### 🌐 Browser-Native Essentials
@@ -141,11 +141,14 @@ The onboarding illustration reserves its full height, so it cannot collapse into
 
 ```text
 MarkVault/
+│
 ├── index.html                 # Landing and hash-routed application
-├── assets/
-│   ├── fonts/                 # Variable fonts and their licenses
-│   ├── icons/                 # Brand and PWA SVGs
-│   └── readme/banner.svg       # GitHub README banner
+│
+├── Assets/
+│   ├── Banner/               # GitHub banner
+│   ├── Icons/                 # Brand and PWA SVGs
+│   └── Fonts/                 # Variable fonts and their licenses
+│
 ├── css/
 │   ├── tokens.css             # Theme, color and typography tokens
 │   ├── base.css
@@ -153,6 +156,7 @@ MarkVault/
 │   ├── marketing.css
 │   ├── app.css
 │   └── refinements.css        # Final responsive/control refinements
+│
 ├── js/
 │   ├── core/                  # Store, signals, router, DOM, IDB, windowing
 │   ├── data/                  # Schema, migrations and repositories
@@ -163,7 +167,7 @@ MarkVault/
 │   ├── lib/constants.js       # Shared shortcut/view definitions
 │   ├── theme.js
 │   └── main.js
-├── dev/                       # Browser tests and source ZIP exporter
+│
 ├── scripts/build.mjs          # Optional esbuild output to dist/
 ├── sw.js
 ├── manifest.webmanifest
@@ -171,6 +175,7 @@ MarkVault/
 ├── package.json
 ├── jsconfig.json
 ├── USER-GUIDE-BN.md            # Detailed Bengali setup/migration guide
+│
 ├── LICENSE
 └── README.md
 ```
@@ -323,7 +328,7 @@ IndexedDB — browser-local stores
 - **Lifecycle:** abort-owned listeners, modal focus restoration without scroll jumps, async route guards and synchronous View Transition snapshots.
 - **Transactions:** multi-store saves are atomic. Never await network/timers/prompts inside a live IDB transaction.
 - **Imports:** worker CSV/JSON parser; main-thread DOMParser for browser HTML. Parent-first folder mapping, cycle rejection and 500-record chunks. Earlier successful chunks survive a later error; retry skips duplicates.
-- **Windowing:** fixed-size grid/rows, responsive column measurement, six-row overscan and bounded keyed cache—not arbitrary-height virtualization.
+- **Windowing:** fixed-size grid/rows, responsive column measurement, six-row overscan and bounded keyed cache – not arbitrary-height virtualization.
 - **Tab consistency:** BroadcastChannel invalidation with storage-event fallback, not cloud synchronization.
 - **Offline:** versioned shell precache, local font/icon refresh and network-only external requests. A first successful online visit is required.
 
@@ -394,7 +399,7 @@ The core local-first application is implemented. The original aspirational brief
 Issues and focused improvements are welcome at [the repository](https://github.com/TajkirHossen-14/MarkVault).
 
 1. Fork or clone the repository and create a feature branch.
-2. Read this README and [IDE-AI-HANDOFF.md](IDE-AI-HANDOFF.md).
+2. Read this README.
 3. Reproduce the issue and add a targeted regression test.
 4. Preserve user data, the local-first boundary and the existing design.
 5. Check desktop/phone and both themes; update the source manifest and SW inventory if needed.
@@ -412,11 +417,11 @@ git push -u origin fix/focused-improvement
 
 ## 📜 License
 
-Licensed under the [MIT License](LICENSE). Geist and JetBrains Mono have their respective SIL Open Font Licenses included in `assets/fonts/`.
+Licensed under the [MIT License](LICENSE). Geist and JetBrains Mono have their respective SIL Open Font Licenses included in `Assets/Fonts/`.
 
 <div align="center">
 
-**MarkVault — your links, finally organized.**
+**MarkVault – Your links, finally organized.**
 
 Built to stay useful. Designed to stay yours.
 
