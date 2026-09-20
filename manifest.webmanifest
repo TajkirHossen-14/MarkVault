@@ -1,6 +1,6 @@
 {
   "id": "./",
-  "name": "MarkVault — Your links, finally organized.",
+  "name": "MarkVault – Your links, finally organized.",
   "short_name": "MarkVault",
   "description": "Your personal, private, local-first bookmark manager.",
   "start_url": "./index.html#/app",
