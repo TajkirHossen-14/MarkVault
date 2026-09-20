@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta http-equiv="Content-Security-Policy"
+        content="default-src 'self'; script-src 'self'; style-src 'self'; font-src 'self'; connect-src 'self'; object-src 'none'">
+    <title>Download MarkVault — Your code, your next chapter</title>
+    <link rel="icon" href="../assets/icons/logo.svg">
+    <link rel="stylesheet" href="../css/tokens.css">
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/components.css">
+    <link rel="stylesheet" href="test.css">
+    <script type="module" src="download.js"></script>
+</head>
+
+<body>
+    <main class="test-page"><a class="text-link" href="../index.html">Back to MarkVault</a>
+        <h1>Your code.<br>Your next chapter.</h1>
+        <p>Download the complete static project, including local fonts, source modules, browser tests, setup
+            instructions, and AI handoff notes. No bookmark data is included.</p>
+        <div class="download-actions"><button id="download-source" class="btn btn-primary">Download complete source
+                ZIP</button><a class="btn" href="../USER-GUIDE-BN.md" download>বাংলা setup guide</a><a class="btn"
+                href="../IDE-AI-HANDOFF.md" download>IDE AI handoff</a><a class="btn" href="../README.md"
+                download>README &amp; test results</a></div>
+        <p id="download-status" role="status">The ZIP is built entirely in your browser. No account or upload.</p>
+        <progress id="download-progress" class="progress" value="0" max="100" hidden></progress>
+        <div class="download-note">
+            <h2>Code backup ≠ bookmark backup.</h2>
+            <p>This download contains the application files only. To move your actual bookmarks, first open MarkVault →
+                Settings → Import & export → JSON. Keep that JSON file separately and import it at your new site
+                address.</p>
+            <p>ডাউনলোডের পর ZIP extract করুন, VS Code-এ folder খুলুন এবং <code>npm install</code> এবং
+                <code>npm run dev</code> চালান। তারপর <code>http://localhost:5173</code> খুলুন। সরাসরি HTML ফাইলে
+                double-click করবেন না।</p>
+        </div>
+        <pre id="download-log" class="download-log"></pre>
+    </main>
+</body>
+
+</html>
