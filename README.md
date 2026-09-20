@@ -176,9 +176,9 @@ MarkVault/
 ├── source-manifest.json       # Download/build inventory
 ├── package.json
 ├── jsconfig.json
-├── USER-GUIDE-BN.md            # Detailed Bengali setup/migration guide
 │
 ├── LICENSE
+├── USER-GUIDE-BN.md            # Detailed Bengali setup/migration guide
 └── README.md
 ```
 
