@@ -145,7 +145,7 @@ MarkVault/
 ├── index.html                 # Landing and hash-routed application
 │
 ├── Assets/
-│   ├── Banner/               # GitHub banner
+│   ├── Banner/                # GitHub banner
 │   ├── Icons/                 # Brand and PWA SVGs
 │   └── Fonts/                 # Variable fonts and their licenses
 │
