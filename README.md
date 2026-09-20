@@ -175,6 +175,7 @@ MarkVault/
 ├── manifest.webmanifest
 ├── source-manifest.json       # Download/build inventory
 ├── package.json
+├── package-lock.json
 ├── jsconfig.json
 │
 ├── LICENSE
