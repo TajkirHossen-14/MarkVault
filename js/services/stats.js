@@ -1,0 +1,4 @@
+// @ts-check
+import { aggregate } from '../workers/stats.worker.js';
+/** Aggregate in a lifecycle-owned worker. @param {Array} records @param {AbortSignal} signal */
+export async function getStats(records, signal) { if (!('Worker' in window)) return aggregate(records); return new Promise((resolve, reject) => { const worker = new Worker(new URL('../workers/stats.worker.js', import.meta.url), { type:'module' }); const abort = () => { worker.terminate(); reject(new DOMException('Cancelled','AbortError')); }; const finish = () => { worker.terminate(); signal.removeEventListener('abort',abort); }; signal.addEventListener('abort',abort,{ once:true }); worker.onmessage = event => { finish(); resolve(event.data.result); }; worker.onerror = () => { finish(); resolve(aggregate(records)); }; worker.postMessage({ id:crypto.randomUUID(),records }); }); }
