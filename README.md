@@ -17,7 +17,7 @@
 
 **No account. No application server. No tracking by default.**
 
-[Report an issue](https://github.com/TajkirHossen-14/MarkVault/issues) • [বাংলা setup guide](USER-GUIDE-BN.md)
+[Report an Issue](https://github.com/TajkirHossen-14/MarkVault/issues) • [বাংলা Setup Guide](USER-GUIDE-BN.md)
 
 </div>
 
