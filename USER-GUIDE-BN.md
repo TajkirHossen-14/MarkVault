@@ -119,17 +119,7 @@ Unbundled project folder upload করুন অথবা GitHub repository conn
 
 Publish tab ব্যবহার করুন। Deployment না হওয়া পর্যন্ত live URL-এ editor-এর পরিবর্তন পৌঁছায় না।
 
-## ৯. IDE AI-কে কী বলবেন
 
-`IDE-AI-HANDOFF.md` পুরোটা দিন। বিশেষ করে বলবেন:
-
-- Existing design বা stack rebuild করবে না।
-- কোনো demo data/backend/auth/tracking যোগ করবে না।
-- ছোট, reviewable changes করবে; storage migration-এ data loss চলবে না।
-- Bug reproduce করে test যোগ করে fix করবে।
-- Mobile সমস্যা desktop screenshot দিয়ে verified বলবে না।
-- Service worker version এবং source-manifest inventory updated রাখবে।
-
-## ১০. পরের কাজের priority
+## ৯. পরের কাজের priority
 
 প্রথমে latest Chrome/Firefox/Safari ও বাস্তব Android/iPhone-এ manual QA; তারপর checkJs diagnostics পরিষ্কার করা, accessibility/Lighthouse audit, 5,000+ items performance profiling এবং deployment verification। তারপর advanced folder drag-and-drop, improved heatmap tooltips ও প্রয়োজনমতো অতিরিক্ত UI primitives। Cloud sync চাইলে সেটি আলাদা architecture decision—বর্তমান privacy promise না ভেঙে পরিকল্পনা করতে হবে।
